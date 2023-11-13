@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Caladea', serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(teamhill2.jpg);
+    background-size: cover;
+    position: relative;
+}
+.banner img{
+    background-position: right;
+}
+.nav{
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.nav .logo{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.nav .menu{
+    width: 45%;
+}
+.nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .menu ul li{
+    list-style: none;
+}
+.nav .menu ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+.nav .menu ul li a:hover{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: orange;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+.banner-clip-path{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0,25% 0, 50% 100%, 0 100%);
+    background-color: #e85d19;
+    background-size: cover;
+    z-index: 2;
+}
+.hawkhead{
+    position: absolute;
+    width: 400px;
+    top: 55%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.hawkhead img{
+    width: 100%;
+}
+.banner-txt{
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 4px #000000;
+}
